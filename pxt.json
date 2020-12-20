@@ -7,7 +7,8 @@
     },
     "files": [
         "main.ts",
-        "tutorial-kompass.md"
+        "tutorial-kompass.md",
+        "README.md"
     ],
     "testFiles": [
         "test.ts"
