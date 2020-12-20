@@ -1,31 +1,99 @@
+# pxt-tut
 
-> Diese Seite bei [https://callitgs3.github.io/tutorial-kompass/](https://callitgs3.github.io/tutorial-kompass/) öffnen
+## ~avatar avatar
 
-## Als Erweiterung verwenden
+Willkommen! Dieses geführte Tutorial zeigt dir, wie du ein Skript programmierst das anzeigt, in welche Himmelsrichtung dein @boardname@ zeigt. Fangen wir an!
 
-Dieses Repository kann als **Erweiterung** in MakeCode hinzugefügt werden.
+## Schritt 1 @fullscreen
 
-* öffne [https://makecode.calliope.cc/](https://makecode.calliope.cc/)
-* klicke auf **Neues Projekt**
-* klicke auf **Erweiterungen** unter dem Zahnrad-Menü
-* nach **https://github.com/callitgs3/tutorial-kompass** suchen und importieren
+Erstelle eine Schleife, die kontinuierlich den Messwert des Kompasses auswertet.
 
-## Dieses Projekt bearbeiten ![Build Status Abzeichen](https://github.com/callitgs3/tutorial-kompass/workflows/MakeCode/badge.svg)
+```blocks
+basic.forever(() => {
 
-Um dieses Repository in MakeCode zu bearbeiten.
+})
+```
 
-* öffne [https://makecode.calliope.cc/](https://makecode.calliope.cc/)
-* klicke auf **Importieren** und dann auf **Importiere URL**
-* füge **https://github.com/callitgs3/tutorial-kompass** ein und klicke auf Importieren
+## Schritt 2 @fullscreen
 
-## Blockvorschau
+Speichere den ausgelesenen Wert des @boardname@ in einer Variablen mit dem Namen `gradzahl`.
 
-Dieses Bild zeigt den Blockcode vom letzten Commit im Master an.
-Die Aktualisierung dieses Bildes kann einige Minuten dauern.
+```blocks
+basic.forever(() => {
+    let gradzahl = input.compassHeading()
+})
+```
 
-![Eine gerenderte Ansicht der Blöcke](https://github.com/callitgs3/tutorial-kompass/raw/master/.github/makecode/blocks.png)
+## Schritt 3 @fullscreen
 
-#### Metadaten (verwendet für Suche, Rendering)
+Wenn `gradzahl` kleiner als `45` oder größer als `315` ist, dann zeigt die Kompassrichtung hauptsächlich in Richtung **Norden**. Zeige ein `N` auf dem @boardname@ an.
 
-* for PXT/calliopemini
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+```blocks
+basic.forever(() => {
+    let gradzahl = input.compassHeading();
+    if (gradzahl < 45 || gradzahl > 315) {
+        basic.showString("N");
+    }
+});
+```
+
+## Schritt 4 @fullscreen
+
+Wenn `gradzahl` kleiner als `135` ist, zeigt der @boardname@ hauptsächlich nach **Osten**. Zeige ein `O` auf dem @boardname@ an.
+
+```blocks
+basic.forever(() => {
+    let gradzahl = input.compassHeading();
+    if (gradzahl < 45 || gradzahl > 315) {
+        basic.showString("N");
+    }
+    else if (gradzahl < 135) {
+        basic.showString("O");
+    }
+});
+```
+
+## Schritt 5 @fullscreen
+
+Wenn `gradzahl` kleiner als `225` ist, zeigt der @boardname@ hauptsächlich nach **Süden**. Zeige ein `S` auf dem @boardname@ an.
+
+```blocks
+basic.forever(() => {
+    let gradzahl = input.compassHeading();
+    if (gradzahl < 45 || gradzahl > 315) {
+        basic.showString("N");
+    }
+    else if (gradzahl < 135) {
+        basic.showString("O");
+    }
+    else if (gradzahl < 225) {
+        basic.showString("S");
+    }
+});
+```
+
+## Schritt 6 @fullscreen
+
+Wenn keine dieser Bedingungen true zurückgibt, muss der @boardname@ nach **Westen** zeigen. Zeige ein `W` auf dem @boardname@ an.
+
+```blocks
+basic.forever(() => {
+    let gradzahl = input.compassHeading();
+    if (gradzahl < 45 || gradzahl > 315) {
+        basic.showString("N");
+    }
+    else if (gradzahl < 135) {
+        basic.showString("O");
+    }
+    else if (gradzahl < 225) {
+        basic.showString("S");
+    }
+    else {
+        basic.showString("W");
+    }
+});
+```
+
+## Schritt 7 @tutorialCompleted
+
+Lade jetzt das Programm auf deinen @boardname@ und teste ob es so funktioniert wie gewünscht!
