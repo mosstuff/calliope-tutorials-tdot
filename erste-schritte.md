@@ -1,6 +1,8 @@
 # Erste Schritte
 
-## Am Computer anschließen
+## ~ @unplugged
+Am Computer anschließen 
+
 Verbinde Deinen mini über ein Micro-USB-Kabel mit Deinem Computer. 
 Macs, Windows-PCs, Chromebooks und Linux-Systeme werden unterstützt.
 
@@ -28,7 +30,9 @@ leuchtet sie dauerhaft.
 ![Am Computer anschliessen](https://github.com/CalliTGS3/calliope-tutorial/blob/master/Am_Computer_anschliessen_2.jpg?raw=true)
 
 
-## Batterien anschließen
+## ~ @unplugged
+Batterien anschließen
+
 Für den Calliope mini ist eine Stromquelle erforderlich. 
 Du kannst Deinen Calliope mini entweder mit einem Micro-USB-Kabel direkt an einen Computer anschließen 
 oder ihn aus Batterien mit Strom versorgen. 
@@ -48,10 +52,12 @@ Schiebe den Schalter auf der Batteriebox auf "Ein" und Dein Calliope mini wird v
 
 Wenn Du Deinen Calliope mini am Computer anschliesst, schalte bitte die Batteriebox vorher aus.
 
-![An Batteriebox anschliessen](https://github.com/CalliTGS3/calliope-tutorial/blob/master/An_Batterie_anschliessen.jpg?raw=true)
+![An Batteriebox anschliessen](https://github.com/CalliTGS3/calliope-tutorial/blob/master/An_Batterie_anschliessen.jpg?raw=true) <br>
 
 
-## Programme auf dem Calliope mini
+## ~ @unplugged
+Programme auf dem Calliope mini
+
 Auf Deinem Calliope mini hat immer nur ein Programm Platz. Jedes Mal, wenn Du ein Programm auf den Calliope mini lädst, 
 wird automatisch das vorhergehende Programm überschrieben. 
 
@@ -67,6 +73,6 @@ neben dem Micro - USB Anschluss kurz drückst.
 ![Programm auf dem Calliope mini](https://github.com/CalliTGS3/calliope-tutorial/blob/master/Programm.jpg?raw=true)
 
 
-## Fertig!
+## ~ @unplugged
 Du kannst jetzt selbst etwas probieren oder einige unserer anderen geführten Anleitungen für die ersten Schritte ausprobieren ...
 
