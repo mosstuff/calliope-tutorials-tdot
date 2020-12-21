@@ -9,7 +9,8 @@
         "main.ts",
         "tutorial-kompass.md",
         "README.md",
-        "erste-schritte.md"
+        "erste-schritte.md",
+        "tutorial-blinkendesherz.md"
     ],
     "testFiles": [
         "test.ts"
