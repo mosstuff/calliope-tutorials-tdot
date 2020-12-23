@@ -10,7 +10,8 @@
         "tutorial-kompass.md",
         "README.md",
         "erste-schritte.md",
-        "tutorial-blinkendesherz.md"
+        "tutorial-blinkendesherz.md",
+        "tutorial-klickzaehler.md"
     ],
     "testFiles": [
         "test.ts"

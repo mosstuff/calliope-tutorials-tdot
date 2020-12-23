@@ -84,3 +84,9 @@ Damit wird Dein Programm zum @boardname@ übertragen.
 Gut gemacht! Du hast Dein erstes MakeCode Programm für den @boardname@ geschrieben.
 Verlasse diese Anleitung, indem Du auf ``|Fertigstellen|`` klickst. 
 
+
+## ~ @unplugged
+Im Hauptmenü von makecode findest Du den Menüpunkt ``|Teilen|``. 
+Klicke darauf, Du siehst anschließend ein Fenster in der Mitte mit dem Namen des Projektes. 
+Klicke auf die Schaltfläche ``|Projekt veröffentlichen|`` und dann auf ``|Link|`` kopieren. 
+Danach kannst Du diesen Link in der Schulcloud als Lösung zu der Aufgabe eintragen.
