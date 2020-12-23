@@ -97,3 +97,5 @@ basic.forever(() => {
 ## Schritt 7 @tutorialCompleted
 
 Lade jetzt das Programm auf deinen @boardname@ und teste ob es so funktioniert wie gewünscht!
+
+Verlasse diese Anleitung, indem Du auf ``|Fertigstellen|`` klickst. 

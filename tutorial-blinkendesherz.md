@@ -82,3 +82,5 @@ Damit wird Dein Programm zum @boardname@ übertragen.
 ## Schritt 6
 
 Gut gemacht! Du hast Dein erstes MakeCode Programm für den @boardname@ geschrieben.
+Verlasse diese Anleitung, indem Du auf ``|Fertigstellen|`` klickst. 
+
