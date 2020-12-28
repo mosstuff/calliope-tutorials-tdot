@@ -11,7 +11,8 @@
         "README.md",
         "erste-schritte.md",
         "tutorial-blinkendesherz.md",
-        "tutorial-klickzaehler.md"
+        "tutorial-klickzaehler.md",
+        "tutorial-5x5-matrix.md"
     ],
     "testFiles": [
         "test.ts"
