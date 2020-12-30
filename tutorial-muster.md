@@ -1,9 +1,8 @@
 # Ein Muster für Anleitungen
---Das alles kann man gut gebrauchen
---### @explicitHints true 
---### @flyoutOnly true für Expand aller Blöcke in der Toolbox
---### @hideIteration true verbirgt Schritte
---### @diffs true zeigt Diffs zwischen Steps
+### @ explicitHints true 
+### @ flyoutOnly true für Expand aller Blöcke in der Toolbox
+### @ hideIteration true verbirgt Schritte
+### @ diffs true zeigt Diffs zwischen Steps
 
 Dieser Code ist Basis des Programmes, nicht in der Anleitung:
 
@@ -23,14 +22,16 @@ Bild einbetten:
 
 ## Ein wenig Markdown @unplugged
 
-Text der Anleitung <br>
+Text der Anleitung mit erzwungenem Zeilenumbruch <br>
 **Text fett** <br>
 *Text kursiv*
 
+Liste:
 - ungeordneter Punkt 1
 - ungeordneter Punkt 2
 - ungeordneter Punkt 3
 
+Geordnete Liste:
 1. geordneter Punkt 1
 2. geordneter Punkt 2
 3. geordneter Punkt 3
