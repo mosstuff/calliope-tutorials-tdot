@@ -56,7 +56,7 @@ Setze diese Zuweisung in den Block  ``||Basic:beim Start||``.
 Setze Deine Variable so: ``[let x = 5]``
 
 
-## Schritt 2 
+## Schritt 2 @fullscreen
 
 Block anzeigen:
 
@@ -70,7 +70,7 @@ let y = 10
 Das ist ein Hinweis für Schritt 2
 
 
-## Schritt 3 
+## Schritt 3 @fullscreen
 
 Block mit Signatur der Funktion:
 
@@ -79,7 +79,7 @@ basic.showNumber(5)
 ```
 
 
-## Schritt 4
+## Schritt 4 @fullscreen
 
 Code Karten anzeigen:
 
@@ -96,7 +96,7 @@ basic.showString("Hello!")
 basic.clearScreen()
 ```
 
-## Schritt 5
+## Schritt 5 @fullscreen
 
 Namespaces anzeigen:
 
@@ -105,14 +105,14 @@ basic.showNumber(0)
 input.onButtonPressed(() => {})
 ```
 
-## Schritt 6
+## Schritt 6 @fullscreen
 
 ```typescript
 let x = 0
 ```
 
 
-## Schritt 7
+## Schritt 7 @fullscreen
 
 Damit der Block in der Auswahl erscheint:
 
@@ -121,7 +121,7 @@ basic.pause(100)
 ```
 
 
-## Schritt 8
+## Schritt 8 @fullscreen
 
 Alle Blöcke eines Namespaces:
 
@@ -129,7 +129,7 @@ Alle Blöcke eines Namespaces:
 basic
 ```
 
-## Schritt 9
+## Schritt 9 @fullscreen
 
 Pseudocode schreibt man so:
 
@@ -141,7 +141,7 @@ for (initialization; check; update) {
 ```
 
 
-## Schritt 10
+## Schritt 10 @fullscreen
 
 Ungültiger Code:
 
@@ -151,7 +151,7 @@ callFunction(;
 ```
 
 
-## Schritt 11
+## Schritt 11 @fullscreen
 
 Gültiger Code:
 
@@ -161,7 +161,7 @@ callFunction()
 ```
 
 
-## Schritt 12
+## Schritt 12 @fullscreen
 
 highlight Code:
 
