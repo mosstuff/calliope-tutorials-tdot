@@ -12,7 +12,7 @@ basic.showString("Hello!")
 basic.clearScreen()
 ```
 
-## ~avatar avatar @unplugged
+## Einleitung @unplugged
 
 **So schliesst Du Deinen @boardname@ am Laptop an.**
 
