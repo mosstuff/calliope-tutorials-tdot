@@ -2,7 +2,7 @@
 ### @ explicitHints true 
 ### @ flyoutOnly true für Expand aller Blöcke in der Toolbox
 ### @ hideIteration true verbirgt Schritte
-### @ diffs true zeigt Diffs zwischen Steps
+### @diffs true zeigt Diffs zwischen Steps
 
 Dieser Code ist Basis des Programmes, nicht in der Anleitung:
 
@@ -49,19 +49,60 @@ Eine Tabelle mit Textausrichtung:
 | Links | Zentriert | Rechts |
 
 
-## Schritt 1 @fullscreen
+## Blöcke und Farben aus der Toolbox @fullscreen
 
 Erstelle eine Variable ``||Variables:x||`` und setze diese auf den Wert 10.
 Setze diese Zuweisung in den Block  ``||Basic:beim Start||``.
 Setze Deine Variable so: ``[let x = 5]``
 
 
-## Schritt 2 @fullscreen
+## Blöcke @fullscreen
 
 Block anzeigen:
 
 ```blocks
 let y = 10
+```
+
+
+## Beispiel Blinkendes Herz Schritt 1 @fullscreen
+
+Nimm den Block ``||basic:zeige LEDs||`` und setze ihn in den ``||basic:dauerhaft||`` Block.
+Zeichne ein Herz mit der Maus, indem Du einzeln auf die LED Symbole drückst.
+
+Den ``||basic:beim Start||`` Block brauchen wir in diesem Programm nicht. Den Block kannst Du löschen, indem Du mit der rechten Maustaste auf ihn zeigst und "Block löschen" auswählst.
+
+```blocks
+basic.forever(function() {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # #
+        . # # # .
+        . . # . .`);
+})
+```
+
+
+## Beispiel Blinkendes Herz Schritt 2 @fullscreen
+
+Nimm noch einen ``|| basic:zeige LEDs ||`` Block und ordne ihn direkt unterhalb des ersten im Programm an. Du kannst ihn leer lassen oder ein kleineres Herz zeichnen.
+
+```blocks
+basic.forever(function() {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # #
+        . # # # .
+        . . # . .`);
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .`);
+})
 ```
 
 
