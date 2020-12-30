@@ -17,13 +17,38 @@ basic.clearScreen()
 
 **So schliesst Du Deinen @boardname@ am Laptop an.**
 
+Bild einbetten:
+
 ![Am Computer anschliessen](https://github.com/CalliTGS3/calliope-tutorial/blob/master/Am_Computer_anschliessen_2.jpg?raw=true)
+
+## Ein wenig Markdown @unplugged
+
+Text der Anleitung <br>
+**Text fett** <br>
+*Text kursiv*
+
+- ungeordneter Punkt 1
+- ungeordneter Punkt 2
+- ungeordneter Punkt 3
+
+1. geordneter Punkt 1
+2. geordneter Punkt 2
+3. geordneter Punkt 3
+
+Eine Tabelle:
+
+| Linke Überschrift | Rechte Überschrift |
+| ------------------ | ------------------ |
+| Etwas Text hier | Ein bisschen hier |
+
+Eine Tabelle mit Textausrichtung:
+
+| Überschrift 1 | Überschrift 2 | Überschrift 3 |
+|:--------------|:-------------:|--------------:|
+| Links | Zentriert | Rechts |
 
 
 ## Schritt 1 @fullscreen
-
-Text der Anleitung
-**Text fett**
 
 Erstelle eine Variable ``||Variables:x||`` und setze diese auf den Wert 10.
 Setze diese Zuweisung in den Block  ``||Basic:beim Start||``.
