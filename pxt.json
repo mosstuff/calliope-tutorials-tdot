@@ -15,7 +15,8 @@
         "tutorial-eingaben.md",
         "tutorial-schleifen.md",
         "tutorial-mathematik.md",
-        "tutorial-logik.md"
+        "tutorial-logik.md",
+        "tutorial-muster.md"
     ],
     "testFiles": [
         "test.ts"
