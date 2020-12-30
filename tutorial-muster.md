@@ -64,11 +64,6 @@ Block anzeigen:
 let y = 10
 ```
 
-#### ~hint
-
-##### Hinweis Schritt 2
-Das ist ein Hinweis für Schritt 2
-
 
 ## Schritt 3 @fullscreen
 
