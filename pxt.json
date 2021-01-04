@@ -17,7 +17,8 @@
         "tutorial-mathematik.md",
         "tutorial-logik.md",
         "tutorial-muster.md",
-        "tutorial-markdown.md"
+        "tutorial-markdown.md",
+        "schummelwuerfel.md"
     ],
     "testFiles": [
         "test.ts"
