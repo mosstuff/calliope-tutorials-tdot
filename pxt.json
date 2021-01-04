@@ -21,7 +21,8 @@
         "schummelwuerfel.md",
         "wasserwaage.md",
         "klickzaehler.md",
-        "kompass.md"
+        "kompass.md",
+        "fang-den-ball.md"
     ],
     "testFiles": [
         "test.ts"
