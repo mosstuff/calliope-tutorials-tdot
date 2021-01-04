@@ -20,7 +20,8 @@
         "tutorial-markdown.md",
         "schummelwuerfel.md",
         "wasserwaage.md",
-        "klickzaehler.md"
+        "klickzaehler.md",
+        "kompass.md"
     ],
     "testFiles": [
         "test.ts"
