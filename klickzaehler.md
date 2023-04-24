@@ -54,7 +54,7 @@ Die Variable kannst mit einem Knopfdruck auf Taste A erhöhen, indem Du den Bloc
 Da in dem Block "ändere um 1" steht, erhöht sich die Variable um eins bei jedem Drücken des Knopfes.
 
 ```blocks
-input.onButtonPressed(Button.A, function () {
+input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     Zähler += 1
 })
 
@@ -68,7 +68,7 @@ Die Variable kannst mit einem Knopfdruck auf Taste B verringen, indem Du den Blo
 Da in dem Block "ändere um - 1" steht, verringert sich die Variable um eins bei jedem Drücken des Knopfes.
 
 ```blocks
-input.onButtonPressed(Button.B, function () {
+input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     Zähler += -1
 })
 
@@ -82,7 +82,7 @@ der Block ``||Variables:setze auf 0 ||`` geschoben wird.
 (Hinweis. Schiebe erst den Block ``||input:wenn Knopf A gedrückt||`` in Dein Programm und ändere dann den Knopf auf ``||input:A+B||``)
 
 ```blocks
-input.onButtonPressed(Button.AB, function () {
+input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     Zähler = 0
 })
 ```
@@ -93,13 +93,13 @@ So sollte Dein Programm jetzt aussehen:
 ```blocks
 let Zähler = 0
 Zähler = 0
-input.onButtonPressed(Button.A, function () {
+input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     Zähler += 1
 })
-input.onButtonPressed(Button.B, function () {
+input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     Zähler -= 1
 })
-input.onButtonPressed(Button.AB, function () {
+input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     Zähler = 0
 })
 basic.forever(function () {
