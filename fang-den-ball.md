@@ -201,10 +201,10 @@ Die anderen Programm - Schritte haben wir in den Hinweisen ab jetzt weggelassen 
 Entferne sie nicht aus Deinem Programm!
 
 ```blocks
-input.onButtonPressed(Button.A, function () {
+input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     Fänger.change(LedSpriteProperty.X, -1)
 })
-input.onButtonPressed(Button.B, function () {
+input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     Fänger.change(LedSpriteProperty.X, 1)
 })
 ```
