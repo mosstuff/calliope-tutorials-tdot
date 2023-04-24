@@ -1,21 +1,14 @@
-> Diese Seite bei [https://callitgs3.github.io/calliope-tutorial/](https://callitgs3.github.io/calliope-tutorial/) öffnen
+# Dieses Repository enthält folgende Tutorials für das Programmieren des Calliope mini mit Makecode V4: 
 
-## Dieses Projekt bearbeiten ![Build Status Abzeichen](https://github.com/callitgs3/calliope-tutorial/workflows/MakeCode/badge.svg)
 
-Um dieses Repository in MakeCode zu bearbeiten.
+- **Erste Schritte:** https://makecode.calliope.cc/#tutorial:https://github.com/CalliTGS3/calliope-tutorial/erste-schritte
 
-* öffne [https://makecode.calliope.cc/](https://makecode.calliope.cc/)
-* klicke auf **Importieren** und dann auf **Importiere URL**
-* füge **https://github.com/callitgs3/calliope-tutorial** ein und klicke auf Importieren
+- **Fang den Ball:** https://makecode.calliope.cc/#tutorial:https://github.com/CalliTGS3/calliope-tutorial/fang-den-ball
 
-## Blockvorschau
+- **Klickzähler:** https://makecode.calliope.cc/#tutorial:https://github.com/CalliTGS3/calliope-tutorial/klickzaehler
 
-Dieses Bild zeigt den Blockcode vom letzten Commit im Master an.
-Die Aktualisierung dieses Bildes kann einige Minuten dauern.
+- **Kompass:** https://makecode.calliope.cc/#tutorial:https://github.com/CalliTGS3/calliope-tutorial/kompass
 
-![Eine gerenderte Ansicht der Blöcke](https://github.com/callitgs3/calliope-tutorial/raw/master/.github/makecode/blocks.png)
+- **Schummelwürfel:** https://makecode.calliope.cc/#tutorial:https://github.com/CalliTGS3/calliope-tutorial/schummelwuerfel
 
-#### Metadaten (verwendet für Suche, Rendering)
-
-* for PXT/calliopemini
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+- **Wasserwaage:** https://makecode.calliope.cc/#tutorial:https://github.com/CalliTGS3/calliope-tutorial/wasserwaage
