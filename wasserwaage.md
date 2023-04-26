@@ -26,9 +26,8 @@ let MaximalerWinkel = 10
 ## Schritt 2 @fullscreen
 
 Erstelle eine Variable ``||Variables:LageX||`` und eine Variable ``||Variables:LageY||``, in die die Lage-Werte des @boardname@ gespeichert werden.
-Ermittle die x - Lage des @boardname@ mit dem Block ``||Input:Rotation (°) rollen||`` aus dem Block Input ``||Input:Input||``
-und speichere den Wert in der Variablen ``||Variables:LageX||``. Ermittle die y - Lage des @boardname@ mit dem Block ``||Input:Rotation (°) Winkel||`` aus dem Block Input ``||Input:Input||``
-und speichere den Wert in der Variablen ``||Variables:LageY||``. 
+Ermittle die x - Lage des @boardname@ mit dem Block ``||Input:Drehung (°) rollen (um y-Achse drehen)||`` aus dem Block ``||Input:Eingabe ... mehr|`` und speichere den Wert in der Variablen ``||Variables:LageX||``. 
+Ermittle die y - Lage des @boardname@ mit dem Block ``||Input:Drehung (°) nicken (um x-Achse drehen)||`` aus dem Block ``||Input:Eingabe ... mehr|`` und speichere den Wert in der Variablen ``||Variables:LageY||``. 
 Damit die Ermittlung kontinuierlich passiert, müssen diese Blöcke in den Block  ``||Basic:dauerhaft||``.
 
 ```blocks
