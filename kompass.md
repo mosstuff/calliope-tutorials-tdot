@@ -12,7 +12,7 @@ einen Pfeil anzeigen, der immer in Richtung Norden zeigt, egal in welche Richtun
 ## Schritt 1 @fullscreen
 
 Erstelle eine Variable ``||Variables:Grad||``, in die der Messwert des Kompasses gespeichert wird.
-Ermittle die Ausrichtung des @boardname@ mit dem Block ``||Input:Kompassausrichtung||`` aus dem Block Input ``||Input:Input||``
+Ermittle die Ausrichtung des @boardname@ mit dem Block ``||Input:Kompassausrichtung (°)` aus dem Block ``||Input:Eingabe||``
 und speichere den Wert in der Variablen ``||Variables:Grad||``. Damit die Ermittlung kontinuierlich passiert, 
 muss das Ganze in den Block  ``||Basic:dauerhaft||``.
 
