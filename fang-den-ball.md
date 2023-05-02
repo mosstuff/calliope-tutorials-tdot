@@ -111,7 +111,7 @@ kann als wir zuschauen und reagieren können. Damit wir die Bewegung des Balls w
 
 ```blocks
 while (true) {
-    Ball = game.createSprite(randint(0, 4), 0)
+    let Ball = game.createSprite(randint(0, 4), 0)
     for (let index = 0; index < 4; index++) {
         basic.pause(BallFlugPause)
         Ball.change(LedSpriteProperty.Y, 1)
