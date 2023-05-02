@@ -129,7 +129,7 @@ Wenn der Fänger den Ball "berührt" hat, erhöhen wir den Punktestand mit dem B
 
 ```blocks
 while (true) {
-    Ball = game.createSprite(randint(0, 4), 0)
+    let Ball = game.createSprite(randint(0, 4), 0)
     for (let index = 0; index < 4; index++) {
         basic.pause(BallFlugPause)
         Ball.change(LedSpriteProperty.Y, 1)
@@ -149,7 +149,7 @@ In der nächsten Runde der Endlos - Schleife entsteht ja wieder ein neuer Ball -
 
 ```blocks
 while (true) {
-    Ball = game.createSprite(randint(0, 4), 0)
+    let Ball = game.createSprite(randint(0, 4), 0)
     for (let index = 0; index < 4; index++) {
         basic.pause(BallFlugPause)
         Ball.change(LedSpriteProperty.Y, 1)
@@ -172,7 +172,7 @@ d.h. der Ball fliegt schneller.
 
 ```blocks
 while (true) {
-    Ball = game.createSprite(randint(0, 4), 0)
+    let Ball = game.createSprite(randint(0, 4), 0)
     for (let index = 0; index < 4; index++) {
         basic.pause(BallFlugPause)
         Ball.change(LedSpriteProperty.Y, 1)
