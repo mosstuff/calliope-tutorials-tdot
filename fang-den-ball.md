@@ -59,7 +59,7 @@ let BallFlugPause = 700
 let PunkteImLevel = 10
 game.setScore(0)
 game.setLife(10)
-Fänger = game.createSprite(2, 4)
+let Fänger = game.createSprite(2, 4)
 ```
 
 
@@ -75,7 +75,7 @@ let BallFlugPause = 700
 let PunkteImLevel = 10
 game.setScore(0)
 game.setLife(10)
-Fänger = game.createSprite(2, 4)
+let Fänger = game.createSprite(2, 4)
 while (true) {
 }
 ```
@@ -128,6 +128,7 @@ Wenn der Fänger den Ball "berührt" hat, erhöhen wir den Punktestand mit dem B
 ``||Game:ändere Spielstand um||``, andernfalls verringern wir die "Leben" des Fängers um 1 mit dem Block ``||Game:Leben entfernen||``.
 
 ```blocks
+let Fänger = game.createSprite(2, 4)
 while (true) {
     let Ball = game.createSprite(randint(0, 4), 0)
     for (let index = 0; index < 4; index++) {
@@ -148,6 +149,7 @@ Den Sprite des Balles müssen wir im vorletzten Schritt noch aus der Anzeige ent
 In der nächsten Runde der Endlos - Schleife entsteht ja wieder ein neuer Ball - Sprite.
 
 ```blocks
+let Fänger = game.createSprite(2, 4)
 while (true) {
     let Ball = game.createSprite(randint(0, 4), 0)
     for (let index = 0; index < 4; index++) {
@@ -171,6 +173,7 @@ d.h. ein Vielfaches von ``||Variables:PunkteImLevel||``. Wenn das der Fall ist, 
 d.h. der Ball fliegt schneller.  
 
 ```blocks
+let Fänger = game.createSprite(2, 4)
 while (true) {
     let Ball = game.createSprite(randint(0, 4), 0)
     for (let index = 0; index < 4; index++) {
@@ -201,6 +204,7 @@ Die anderen Programm - Schritte haben wir in den Hinweisen ab jetzt weggelassen 
 Entferne sie nicht aus Deinem Programm!
 
 ```blocks
+let Fänger = game.createSprite(2, 4)
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     Fänger.change(LedSpriteProperty.X, -1)
 })
