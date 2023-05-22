@@ -2,8 +2,6 @@
 
 ## Introduction @unplugged
 
-![Multiple @boardname@ throwing a dice](/docs/calliope/tutorials/10_multi_dice_animation.gif)
-
 Build a multi-player dice game using the **radio**. The **radio** blocks let you send wireless messages between a @boardname@ and another @boardname@.
 
 In this game, you shake to "throw the dice" and send the result to the other @boardname@. If you receive a result of a dice throw equal or greater than yours, you lose.
