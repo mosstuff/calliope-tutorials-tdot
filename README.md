@@ -12,3 +12,5 @@
 - **Schummelwürfel:** https://makecode.calliope.cc/#tutorial:https://github.com/CalliTGS3/calliope-tutorials/schummelwuerfel
 
 - **Wasserwaage:** https://makecode.calliope.cc/#tutorial:https://github.com/CalliTGS3/calliope-tutorials/wasserwaage
+
+- **Zwei Würfel:** https://makecode.calliope.cc/#tutorial:https://github.com/CalliTGS3/calliope-tutorials/zweiwuerfel
