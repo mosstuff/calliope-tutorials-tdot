@@ -22,7 +22,8 @@
         "wasserwaage.md",
         "klickzaehler.md",
         "kompass.md",
-        "fang-den-ball.md"
+        "fang-den-ball.md",
+        "zweiwuerfel.md"
     ],
     "testFiles": [
         "test.ts"
