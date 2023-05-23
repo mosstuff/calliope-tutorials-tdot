@@ -8,7 +8,7 @@ Wir brauchen zwei @boardname@ und auf beide müssen wir das gleiche Programm üb
 
 In diesem Spiel schüttelst Du den Würfel auf dem @boardname@ und sendest die Zahl der Augen zu dem anderen @boardname@. Der andere @boardname@ macht das genauso. Wenn Du eine Zahl von Augen größer oder gleich Deiner Anzahl empfängst, hast Du verloren.
 
-## Würfelspiel @fullscreen
+## Würfelspiel für Zwei @fullscreen
 
 Laß uns beginnen das **Würfel Spiel für Zwei** zu programmieren.
 
