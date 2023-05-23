@@ -12,6 +12,8 @@ In diesem Spiel schüttelst Du den Würfel auf dem @boardname@ und sendest die Z
 
 Laß uns beginnen das **Würfel Spiel für Zwei** zu programmieren.
 
+Es sieht zunächst genauso aus wie das einfache Würfelspiel. Gewürfelt wird durch Schütteln des @boardname@. 
+
 ```blocks
 input.onGesture(Gesture.Shake, function () {
     basic.showNumber(Math.randomRange(1, 6))
@@ -22,9 +24,9 @@ input.onGesture(Gesture.Shake, function () {
 
 Wir müssen die Anzahl der Augen in einer Variablen speichern. Eine **Variable** ist ein Platz im Speicher des @boardname@ den wir über den Namen der Variablen wiederfinden, und er speichert unsere Daten, zB. eine Zahl.
 
-* Gehe zur Toolbox **Variablen** und klicke ``||Erstelle eine Variable..||`` um eine neue Variable anzulegen. Wir nennen sie **Augen**. 
-* Füge einen ``||setze Augen auf||`` Block in das Programm und ``||wähle eine zufällige Zahl von bis ||`` darin aus.
-* Füge einen ``||Augen||`` aus der **Variablen** Toolbox in einen ``||Grundlagen:Zeige Zahl||`` Block.
+* Gehe zur Toolbox **Variablen** und klicke ``||Variablen:Erstelle eine Variable||`` um eine neue Variable anzulegen. Wir nennen sie **Augen**. 
+* Füge einen ``||Variablen:setze Augen auf||`` Block in das Programm und ``||Mathematik:wähle eine zufällige Zahl von bis ||`` darin aus.
+* Füge einen ``||Variablen:Augen||`` aus der **Variablen** Toolbox in einen ``||Grundlagen:zeige Zahl||`` Block.
 
 ```blocks
 let Augen = 0
@@ -36,7 +38,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Sende die Augen @fullscreen
 
-Plaziere einen ``||Funk:sende Zahl über Funk||`` und ``||Augen||`` in das Programm, um die ``Augen`` Variable über Funk an den anderen @boardname@ zu senden.
+Plaziere einen ``||Funk:sende Zahl über Funk||`` und ``||Variablen:Augen||`` in das Programm, um die ``Augen`` Variable über Funk an den anderen @boardname@ zu senden.
 
 ```blocks
 let Augen = 0
@@ -49,7 +51,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Empfange die Augen @fullscreen
 
-Plaziere einen ``||Funk:wenn Zahl empfangen||`` Ereignis Block in deinem Programm. Dieser Block wird aufgerufen wenn eine Nachricht von dem anderen @boardname@ eintrifft. Der ``receivedNumber`` Wert  ist die Anzahl der Augen deines Mitspeilers mit dem anderen @boardname@.
+Plaziere einen ``||Funk:wenn Zahl empfangen||`` Ereignis Block in deinem Programm. Dieser Block wird aufgerufen wenn eine Nachricht von dem anderen @boardname@ eintrifft. Der ``receivedNumber`` Wert  ist die Anzahl der Augen deines Mitspielers mit dem anderen @boardname@.
 
 ```blocks
 radio.onReceivedNumber(function (receivedNumber) {
@@ -58,7 +60,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 
 ## Teste wer gewonnen hat @fullscreen
 
-Plaziere einen ``||Logikc:wenn||`` Block in dem Ereignis, um zu überprüfen, ob ``receivedNumber`` größer oder gleich ``Augen`` ist. 
+Plaziere einen ``||Logik:wenn||`` Block in dem Ereignis, um zu überprüfen, ob ``receivedNumber`` größer oder gleich ``Augen`` ist. 
 Wenn das der Fall ist, hast Du verloren. Zeige ein weinendes Gesicht an.
 
 Programmiere selbständig, ein lachendes Gesicht anzuzeigen!
