@@ -1,14 +1,14 @@
-# Multi Dice
+# Zwei Würfel
 
-## Introduction @unplugged
+## Einleitung @unplugged
 
-Build a multi-player dice game using the **radio**. The **radio** blocks let you send wireless messages between a @boardname@ and another @boardname@.
+Baue ein Würfelspiel mit dem Calliope mini **Funk**. Die **Funk** Blöcke erlauben das Austauschen von Nachrichten von einem @boardname@ mit einem anderen @boardname@.
 
-In this game, you shake to "throw the dice" and send the result to the other @boardname@. If you receive a result of a dice throw equal or greater than yours, you lose.
+In diesem Spiel schüttelst Du den Würfel auf dem @boardname@ und sendet die Zahl der Augen zu dem anderen @boardname@. Wenn Du eine Zahl von Augen größer oder gleich Deiner Anzahl empfängst, hast Du verloren.
 
-## Dice game @fullscreen
+## Würfelspiel @fullscreen
 
-Let's start by rebuilding the **dice** game. If you are unsure about the details, try the **dice** tutorial again.
+Laß uns beginnen das **Würfel** Spiel zu programmieren.
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
@@ -16,36 +16,36 @@ input.onGesture(Gesture.Shake, function () {
 })
 ```
 
-## Dice variable @fullscreen
+## Variable Augen @fullscreen
 
-We need to store the result of the dice cast in a variable. A **variable** is like a place in the memory of the @boardname@ where you save information, like numbers.
+Wir müssen die Anzahl der Augen in einer Variablen speichern. Eine **Variable** ist ein Platz im Speicher des @boardname@ den wier über den Namen der Variablen wiederfinden, und er speichert unsere Daten, zB. eine Zahl.
 
-* Go to the **Variables** toolbox and click ``||Make a Variable||`` to create a new variable. We will call it **dice**. 
-* Add a ``||set dice to||`` block and drag the ``||pick random||`` into it.
-* Drag a ``||dice||`` from the **Variables** toolbox into the ``||basic:show number||`` block.
+* Gehe zur Toolbox **Variablen** und klicke ``||Make a Variable||`` um eine neue Variable anzulegen. Wir nenen sie **Augen**. 
+* Füge einen ``||setze Augen auf||`` block in das Programm und ``||wähle Zufallszahl ||`` darin aus.
+* Füge einen ``||Augen||`` aus dem **Variablen** Toolbox in einen ``||basic:show number||`` Block.
 
 ```blocks
-let dice = 0
+let Augen = 0
 input.onGesture(Gesture.Shake, function () {
-    dice = Math.randomRange(1, 6)
-    basic.showNumber(dice)
+    Augen = Math.randomRange(1, 6)
+    basic.showNumber(Augen)
 })
 ```
 
-## Send the dice @fullscreen
+## Sende die Augen @fullscreen
 
-Put in a ``||radio:send number||`` and a ``||dice||`` to send the value stored in the ``dice`` variable via radio.
+Plaziere einen ``||radio:send number||`` und ``||Augen||`` in das Programm, um die ``Augen`` Variable über Funk zu senden.
 
 ```blocks
-let dice = 0
+let Augen = 0
 input.onGesture(Gesture.Shake, function () {
-    dice = Math.randomRange(1, 6)
-    basic.showNumber(dice)
-    radio.sendNumber(dice)
+    Augen = Math.randomRange(1, 6)
+    basic.showNumber(Augen)
+    radio.sendNumber(Augen)
 })
 ```
 
-## Receive the dice @fullscreen
+## Empfange die Augen @fullscreen
 
 Go get an ``||radio:on received number||`` event block. This event runs when a radio message from another @boardname@ arrives. The ``receivedNumber`` value is the value of the dice in this game.
 
@@ -60,9 +60,9 @@ Add a ``||logic:if||`` block to test if ``receivedNumber`` is greater or equal t
 If is, you lost so display a sad face on the screen.
 
 ```blocks
-let dice = 0;
+let Augen = 0;
 radio.onReceivedNumber(function (receivedNumber) {
-    if (receivedNumber >= dice) {
+    if (receivedNumber >= Augen) {
         basic.showIcon(IconNames.Sad)
     }
 })
@@ -75,14 +75,14 @@ Try pressing **SHAKE** in the simulator and see that a second @boardname@ appear
 If you have more than one @boardname@, download your code onto each one and try playing the game with your friends!
 
 ```blocks
-let dice = 0
+let Augen = 0
 input.onGesture(Gesture.Shake, function () {
-    dice = Math.randomRange(1, 6)
-    basic.showNumber(dice)
-    radio.sendNumber(dice)
+    Augen = Math.randomRange(1, 6)
+    basic.showNumber(Augen)
+    radio.sendNumber(Augen)
 })
 radio.onReceivedNumber(function (receivedNumber) {
-    if (receivedNumber >= dice) {
+    if (receivedNumber >= Augen) {
         basic.showIcon(IconNames.Sad)
     }
 })
