@@ -2,13 +2,15 @@
 
 ## Einleitung @unplugged
 
-Baue ein Würfelspiel mit dem Calliope mini **Funk**. Die **Funk** Blöcke erlauben das Austauschen von Nachrichten von einem @boardname@ mit einem anderen @boardname@.
+Baue ein Würfelspiel für zwei Spieler mit dem @boardname@. Die **Funk** Blöcke erlauben das Austauschen von Nachrichten von einem @boardname@ mit einem anderen @boardname@.
 
-In diesem Spiel schüttelst Du den Würfel auf dem @boardname@ und sendet die Zahl der Augen zu dem anderen @boardname@. Wenn Du eine Zahl von Augen größer oder gleich Deiner Anzahl empfängst, hast Du verloren.
+Wir brauchen zwei @boardname@ und auf beide müssen wir das gleiche Programm übertragen.
+
+In diesem Spiel schüttelst Du den Würfel auf dem @boardname@ und sendest die Zahl der Augen zu dem anderen @boardname@. Der andere @boardname@ macht das genauso. Wenn Du eine Zahl von Augen größer oder gleich Deiner Anzahl empfängst, hast Du verloren.
 
 ## Würfelspiel @fullscreen
 
-Laß uns beginnen das **Würfel** Spiel zu programmieren.
+Laß uns beginnen das **Würfel Spiel für Zwei** zu programmieren.
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
@@ -18,11 +20,11 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Variable Augen @fullscreen
 
-Wir müssen die Anzahl der Augen in einer Variablen speichern. Eine **Variable** ist ein Platz im Speicher des @boardname@ den wier über den Namen der Variablen wiederfinden, und er speichert unsere Daten, zB. eine Zahl.
+Wir müssen die Anzahl der Augen in einer Variablen speichern. Eine **Variable** ist ein Platz im Speicher des @boardname@ den wir über den Namen der Variablen wiederfinden, und er speichert unsere Daten, zB. eine Zahl.
 
-* Gehe zur Toolbox **Variablen** und klicke ``||Make a Variable||`` um eine neue Variable anzulegen. Wir nenen sie **Augen**. 
-* Füge einen ``||setze Augen auf||`` block in das Programm und ``||wähle Zufallszahl ||`` darin aus.
-* Füge einen ``||Augen||`` aus dem **Variablen** Toolbox in einen ``||basic:show number||`` Block.
+* Gehe zur Toolbox **Variablen** und klicke ``||Erstelle eine Variable..||`` um eine neue Variable anzulegen. Wir nennen sie **Augen**. 
+* Füge einen ``||setze Augen auf||`` Block in das Programm und ``||wähle eine zufällige Zahl von bis ||`` darin aus.
+* Füge einen ``||Augen||`` aus der **Variablen** Toolbox in einen ``||Grundlagen:Zeige Zahl||`` Block.
 
 ```blocks
 let Augen = 0
@@ -34,7 +36,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Sende die Augen @fullscreen
 
-Plaziere einen ``||radio:send number||`` und ``||Augen||`` in das Programm, um die ``Augen`` Variable über Funk zu senden.
+Plaziere einen ``||Funk:sende Zahl über Funk||`` und ``||Augen||`` in das Programm, um die ``Augen`` Variable über Funk an den anderen @boardname@ zu senden.
 
 ```blocks
 let Augen = 0
@@ -47,17 +49,19 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Empfange die Augen @fullscreen
 
-Go get an ``||radio:on received number||`` event block. This event runs when a radio message from another @boardname@ arrives. The ``receivedNumber`` value is the value of the dice in this game.
+Plaziere einen ``||Funk:wenn Zahl empfangen||`` Ereignis Block in deinem Programm. Dieser Block wird aufgerufen wenn eine Nachricht von dem anderen @boardname@ eintrifft. Der ``receivedNumber`` Wert  ist die Anzahl der Augen deines Mitspeilers mit dem anderen @boardname@.
 
 ```blocks
 radio.onReceivedNumber(function (receivedNumber) {
 })
 ```
 
-## Check your cast @fullscreen
+## Teste wer gewonnen hat @fullscreen
 
-Add a ``||logic:if||`` block to test if ``receivedNumber`` is greater or equal to ``dice``. 
-If is, you lost so display a sad face on the screen.
+Plaziere einen ``||Logikc:wenn||`` Block in dem Ereignis, um zu überprüfen, ob ``receivedNumber`` größer oder gleich ``Augen`` ist. 
+Wenn das der Fall ist, hast Du verloren. Zeige ein weinendes Gesicht an.
+
+Programmiere selbständig, ein lachendes Gesicht anzuzeigen!
 
 ```blocks
 let Augen = 0;
@@ -68,11 +72,11 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 ```
 
-## Test it! @fullscreen
+## Teste dein Programm im Simulator! @fullscreen
 
-Try pressing **SHAKE** in the simulator and see that a second @boardname@ appears. You can play the game on both virtual boards.
+Drücke **SCHÜTTELN** im Simulator und schaue was auf dem zweiten @boardname@ passiert. Du kannst das auf beiden virtuellen Boards probieren.
 
-If you have more than one @boardname@, download your code onto each one and try playing the game with your friends!
+Überspiele das Programm auf beide @boardname@, und spiele das Spiel mit deinem Freund!
 
 ```blocks
 let Augen = 0
