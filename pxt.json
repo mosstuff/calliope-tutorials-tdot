@@ -13,6 +13,7 @@
         "rock-paper-scissors-de.md"
     ],
     "testFiles": [
+        "test.ts"
     ],
     "supportedTargets": [
         "calliopemini"
