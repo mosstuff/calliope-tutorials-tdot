@@ -26,7 +26,7 @@ basic.forever(function() {
 
 ## Schritt 2 @showhint
 
-Nimm noch einen ``|| basic:zeige LEDs ||`` Block und ordne ihn direkt unterhalb des ersten im Programm an. Du kannst ihn leer lassen oder ein kleineres Herz zeichnen.
+Nimm noch einen ``|| basic:zeige LEDs ||`` Block und ordne ihn direkt unterhalb des ersten im Programm an. Du kannst ihn leer lassen.
 
 ```blocks
 basic.forever(function() {
