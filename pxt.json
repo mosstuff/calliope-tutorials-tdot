@@ -1,0 +1,22 @@
+{
+    "name": "Calliope mini Anleitung",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "coin-flipper-de.md",
+        "dice-de.md",
+        "flashing-heart-de.md",
+        "name-tag-de.md",
+        "rock-paper-scissors-de.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "calliopemini"
+    ],
+    "preferredEditor": "tsprj"
+}
