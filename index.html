@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #872341, #09122C);
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .button img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .button:hover img {
+            opacity: 0.5;
+        }
+
+        .button span {
+            position: relative;
+            z-index: 2;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .copyright {
+            margin-top: 50px;
+            font-size: 0.8em;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Probier mal selber!<br>Simple Projekte mit dem Calliope</h1>
+    <h3>Wähle eines dieser Projekte aus und starte durch!</h3>
+    <div class="button-container">
+        <a href="https://makecode.calliope.cc/#tutorial:https://github.com/mosstuff/calliope-tutorials-tdot/flashing-heart-de" class="button">
+            <img src="./img/01_flashing_heart.png" alt="">
+            <span>Blinkendes Herz</span>
+        </a>
+        <a href="https://makecode.calliope.cc/#tutorial:https://github.com/mosstuff/calliope-tutorials-tdot/name-tag-de" class="button">
+            <img src="./img/02_nametag.png" alt="">
+            <span>Namensschild</span>
+        </a>
+        <a href="https://makecode.calliope.cc/#tutorial:https://github.com/mosstuff/calliope-tutorials-tdot/dice-de" class="button">
+            <img src="./img/04_dice.png" alt="">
+            <span>Würfel</span>
+        </a>
+        <a href="https://makecode.calliope.cc/#tutorial:https://github.com/mosstuff/calliope-tutorials-tdot/coin-flipper-de" class="button">
+            <img src="./img/08_coin_flipper.png" alt="">
+            <span>Münze Werfer</span>
+        </a>
+        <a href="https://makecode.calliope.cc/#tutorial:https://github.com/mosstuff/calliope-tutorials-tdot/rock-paper-scissors-de" class="button">
+            <img src="./img/07_stone_paper_scissors.png" alt="">
+            <span>Schere-Stein-Papier</span>
+        </a>
+
+    </div>
+    <h3>Oder Du erkundest auf eigene Faust:</h3>
+    <div class="button-cintainer">
+        <a href="https://makecode.calliope.cc/#editor" class="button">
+            <img src="./img/03_smiley_button.png">
+            <span>Freies Experimentieren</span>
+        </a>
+    </div>
+    <div class="copyright">
+        &copy; 2025 Katharinen-Gymnasium Ingolstadt (Moritz Schirmer & GutsherrInsel7). All rights reserved.
+    </div>
+</body>
+</html>
